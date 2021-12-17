@@ -9,4 +9,10 @@ bot = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_MSG = "Hey 
+START_MSG = """Hey {}
+
+i am Poisons Assistant 
+
+You Can Contact My Maater From Here
+
+"""
