@@ -1,22 +1,20 @@
 {
-  "name": "Private Bot",
-  "env": {
-    "BOT_TOKEN": {
-      "description": "Your bot token, as a string.",
-      "value": ""
+    "name": "Private Bot",
+    "description": "A Telegram botwritten in python using pyrogram",
+    "repository": "https://github.com/Cat-of-tg/Private-bot",
+    "keywords": ["telegram", "service", "regex","link", "cleaner"],
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token From @Botfather"
+        },
+        "API_ID": {
+            "description": "Your API_ID from https://my.telegram.org/"
+        },
+        "API_HASH": {
+            "description": "Your API_HASH from https://my.telegram.org/"
+        }
     },
-    "API_ID": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": ""
+    "buildpacks": [{"url": "heroku/python"}]
 }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ] 
-}
+
+-->> Copy pasted from https://github.com/SpamShield/service-regexlink-cleaner
