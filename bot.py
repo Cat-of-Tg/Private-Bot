@@ -10,9 +10,30 @@ bot = Client(
 )
 
 START_MSG = """Hey {}
-
 i am Poisons Assistant 
-
-You Can Contact My Maater From Here
-
+You Can Contact My Master From Here
 """
+
+START_BTN = InlineKeyboardMarkup(
+
+        [[
+
+        InlineKeyboardButton('JOIN HERE', url= 'https://t.me/Team_Lad'),
+
+        InlineKeyboardButton('SOURCE', url= 'https://github.com/Cat-of-tg/Private-bot')
+
+        ]]
+
+    )
+
+@bot.on_message(filters.command(["start"]))
+async def start(bot, update):
+    text = START_MSG.format(update.from_user.mention)
+    reply_markup = START_BTN
+    await update.reply_text(
+        text=text,
+        disable_web_page_preview=True,
+        reply_markup=reply_markup
+        
+    
+bot.run
