@@ -2,7 +2,7 @@
     "name": "Private Bot",
     "description": "A Telegram botwritten in python using pyrogram",
     "repository": "https://github.com/Cat-of-tg/Private-bot",
-    "keywords": ["telegram", "service", "regex","link", "cleaner"],
+    "keywords": ["telegram", "nothing"]
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token From @Botfather"
@@ -14,6 +14,7 @@
             "description": "Your API_HASH from https://my.telegram.org/"
         }
     },
+
     "buildpacks": [{"url": "heroku/python"}]
 }
 
