@@ -17,4 +17,3 @@
     "buildpacks": [{"url": "heroku/python"}]
 }
 
--->> Copy pasted from https://github.com/SpamShield/service-regexlink-cleaner
