@@ -14,6 +14,10 @@
             "description": "Your API_HASH from https://my.telegram.org/"
         }
     },
-    "buildpacks": [{"url": "heroku/python"}]
+    "buildpacks": [
+                    {
+                       "url": "heroku/python"
+                    }
+                  ]
 }
 
