@@ -15,15 +15,10 @@ You Can Contact My Master From Here
 """
 
 START_BTN = InlineKeyboardMarkup(
-
         [[
-
         InlineKeyboardButton('JOIN HERE', url= 'https://t.me/Team_Lad'),
-
         InlineKeyboardButton('SOURCE', url= 'https://github.com/Cat-of-tg/Private-bot')
-
         ]]
-
     )
 
 @bot.on_message(filters.command(["start"]))
