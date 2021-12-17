@@ -1,8 +1,8 @@
 {
-    "name": "Private Bot",
-    "description": "A Telegram botwritten in python using pyrogram",
+    "name": "Info Bot",
+    "description": "i am nothing",
     "repository": "https://github.com/Cat-of-tg/Private-bot",
-    "keywords": ["telegram", "nothing"]
+    "keywords": ["telegram", "bot"],
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token From @Botfather"
@@ -13,11 +13,6 @@
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/"
         }
-    },
-    "buildpacks": [
-                    {
-                       "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
-                    }
-                  ]
+   },
+    "buildpacks": [{"url": "https://github.com/stomita/heroku-buildpack-phantomjs"}]
 }
-
