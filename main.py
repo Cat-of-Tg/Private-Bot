@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 bot = Client(
-    "bot",
+    "private bot",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"]
@@ -29,5 +29,5 @@ async def start(bot, update):
         text=text,
         disable_web_page_preview=True,
         reply_markup=reply_markup
-         
-bot.run_until_disconnected()
+bot.run()
+
