@@ -33,4 +33,4 @@ async def start(bot, update):
     )
 
 
-Bot.run(
+Bot.run()
