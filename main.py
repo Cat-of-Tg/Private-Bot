@@ -1,4 +1,4 @@
-import os
+Bimport os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -28,5 +28,5 @@ async def start(bot, update):
     await update.reply_text(
         text=text,
         disable_web_page_preview=True,
-        reply_markup=reply_markup ko
+        reply_markup=reply_markup
 
