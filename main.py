@@ -1,5 +1,5 @@
 import os
-from pyrogram import Client, filters 
+from Pyrogram import Client, filters 
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 Bot = Client(
