@@ -21,12 +21,11 @@ START_BTN = InlineKeyboardMarkup(
         ]]
     )
 
-@bot.on_message(filters.command(["start"]))
+@Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
-    text = START_MSG.format(update.from_user.mention)
-    reply_markup = START_BTN
     await update.reply_text(
-        text=text,
+        text=START_MSG,
         disable_web_page_preview=True,
-        reply_markup=reply_markup
+        reply_markup=START_BTN
+    )
 bot.run()
