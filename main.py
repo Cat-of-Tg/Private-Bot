@@ -30,4 +30,4 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
          
-bot.run()
+bot.polling()
