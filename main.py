@@ -29,3 +29,4 @@ async def start(bot, update):
         text=text,
         disable_web_page_preview=True,
         reply_markup=reply_markup
+bot.run()
