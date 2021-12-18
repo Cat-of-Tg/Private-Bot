@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-Client = Client(
+bot = Client(
     "Poison",
     bot_token = os.environ["BOT_TOKEN"],
     api_id = int(os.environ["API_ID"]),
@@ -21,7 +21,7 @@ START_BTN = InlineKeyboardMarkup(
         ]]
     )
 
-@Client.on_message(filters.command(["start"]))
+@bot.on_message(filters.command(["start"]))
 async def start(bot, update):
     text = START_MSG.format(update.from_user.mention)
     reply_markup = START_BTN
@@ -30,4 +30,4 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_markup=reply_markup
          
-Client.run()
+bot.run()
