@@ -13,6 +13,7 @@ START_MSG = """Hey {}
 i am Poisons Assistant 
 You Can Contact My Master From Here
 """
+ABOUT_MSG = """ SOURCE - github.com/Cat-of-tg/private-bot """
 
 START_BTN = InlineKeyboardMarkup(
         [[
@@ -25,6 +26,14 @@ START_BTN = InlineKeyboardMarkup(
 async def start(bot, update):
     await update.reply_text(
         text=START_MSG.format(update.from_user.mention),
+        disable_web_page_preview=True,
+        reply_markup=START_BTN
+    )
+
+@Bot.on_message(filters.private & filters.command(["about"]))
+async def start(bot, update):
+    await update.reply_text(
+        text=ABOUT_MSG.format(update.from_user.mention),
         disable_web_page_preview=True,
         reply_markup=START_BTN
     )
