@@ -23,7 +23,7 @@ ABOUT_MSG = """ 👀Source code
 START_BTN = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('JOIN HERE', url= 'https://t.me/Team_Lad'),
-        InlineKeyboardButton('SOURCE', callback_data='about') 
+        InlineKeyboardButton('ABOUT', callback_data='about') 
     )
 ABOUT_BTN = InlineKeyboardMarkup(
         [[
